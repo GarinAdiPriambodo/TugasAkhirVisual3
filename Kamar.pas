@@ -22,7 +22,6 @@ type
     b3: TButton;
     b4: TButton;
     b5: TButton;
-    dg1: TDBGrid;
     b6: TButton;
     e3: TEdit;
     e4: TEdit;
@@ -31,8 +30,10 @@ type
     ds1: TDataSource;
     con1: TZConnection;
     zqry1: TZQuery;
-    frxdDBfrxdbdtst1: TfrxDBDataset;
-    frxrprt1: TfrxReport;
+    dg1: TDBGrid;
+    frxReport1: TfrxReport;
+    frxdDB1: TfrxDBDataset;
+    procedure b6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -45,5 +46,10 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm7.b6Click(Sender: TObject);
+begin
+frxReport1.ShowReport();
+end;
 
 end.

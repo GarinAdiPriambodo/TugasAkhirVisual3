@@ -9,7 +9,6 @@ uses
 
 type
   TForm8 = class(TForm)
-    l1: TLabel;
     l2: TLabel;
     l4: TLabel;
     l5: TLabel;
@@ -23,7 +22,6 @@ type
     b3: TButton;
     b4: TButton;
     b5: TButton;
-    dg1: TDBGrid;
     b6: TButton;
     e3: TEdit;
     e4: TEdit;
@@ -32,9 +30,10 @@ type
     ds1: TDataSource;
     con1: TZConnection;
     zqry1: TZQuery;
-    frxdDBfrxdbdtst1: TfrxDBDataset;
-    frxrprt1: TfrxReport;
-    e7: TEdit;
+    dg1: TDBGrid;
+    frxdDB1: TfrxDBDataset;
+    frxReport1: TfrxReport;
+    procedure b6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -47,5 +46,10 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm8.b6Click(Sender: TObject);
+begin
+frxReport1.ShowReport();
+end;
 
 end.

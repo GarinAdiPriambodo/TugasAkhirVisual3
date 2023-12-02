@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = -34
-  Top = 214
+  Left = 300
+  Top = 206
   Width = 1044
   Height = 540
   Caption = 'Main Menu'
@@ -29,12 +29,15 @@ object Form3: TForm3
       end
       object PEGAWAI1: TMenuItem
         Caption = 'PEGAWAI'
+        OnClick = PEGAWAI1Click
       end
       object KAMAR1: TMenuItem
         Caption = 'KAMAR'
+        OnClick = KAMAR1Click
       end
       object RESERVASI1: TMenuItem
         Caption = 'RESERVASI'
+        OnClick = RESERVASI1Click
       end
       object CHECKIN1: TMenuItem
         Caption = 'CHECK IN'

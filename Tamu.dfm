@@ -1,6 +1,6 @@
 object Form5: TForm5
-  Left = 273
-  Top = 186
+  Left = -15
+  Top = 160
   Width = 1214
   Height = 540
   Caption = 'Tamu'

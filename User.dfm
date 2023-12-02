@@ -238,6 +238,7 @@ object Form4: TForm4
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 9
+    OnClick = b6Click
   end
   object cbb2: TComboBox
     Left = 168

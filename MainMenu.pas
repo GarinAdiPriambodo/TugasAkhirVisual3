@@ -24,6 +24,9 @@ type
     procedure LOGOUT1Click(Sender: TObject);
     procedure EXIT1Click(Sender: TObject);
     procedure AMU1Click(Sender: TObject);
+    procedure PEGAWAI1Click(Sender: TObject);
+    procedure KAMAR1Click(Sender: TObject);
+    procedure RESERVASI1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -35,7 +38,7 @@ var
 
 implementation
 
-uses User, Login, Tamu;
+uses User, Login, Tamu, Pegawai, Kamar, Reservasi;
 
 {$R *.dfm}
 
@@ -65,6 +68,21 @@ end;
 procedure TForm3.AMU1Click(Sender: TObject);
 begin
 form5.showmodal;
+end;
+
+procedure TForm3.PEGAWAI1Click(Sender: TObject);
+begin
+form6.showmodal;
+end;
+
+procedure TForm3.KAMAR1Click(Sender: TObject);
+begin
+form7.showmodal;
+end;
+
+procedure TForm3.RESERVASI1Click(Sender: TObject);
+begin
+form8.showmodal;
 end;
 
 end.

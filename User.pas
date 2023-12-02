@@ -39,6 +39,7 @@ type
     procedure b5Click(Sender: TObject);
     procedure dg1CellClick(Column: TColumn);
     procedure FormCreate(Sender: TObject);
+    procedure b6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -197,6 +198,11 @@ end;
 procedure TForm4.FormCreate(Sender: TObject);
 begin
 setawal;
+end;
+
+procedure TForm4.b6Click(Sender: TObject);
+begin
+frxReport1.ShowReport();
 end;
 
 end.
